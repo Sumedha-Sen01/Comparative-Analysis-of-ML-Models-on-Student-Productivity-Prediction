@@ -67,4 +67,4 @@ I evaluated 11 different regression models. While several ensemble methods showe
 
   - The Winner: Multiple Linear Regression outperformed complex ensembles on the test set. This suggests the relationship between student habits (sleep, GPA, physiology) and productivity is relatively linear and the model isn't distracted by noise.
   - Overfitting Warning: Models like Decision Tree, Extra Trees, and XGBoost achieved a perfect $R^2$ of 1.0000 on training data but dropped significantly on test data. This indicates they "memorized" the training set rather than learning general patterns.
-  - Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.3543$), likely due to the dataset size or requiring more hyperparameter tuning.
+  - Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.4758$), likely due to the dataset size or requiring more hyperparameter tuning.
