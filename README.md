@@ -15,12 +15,12 @@ The model processes a variety of features extracted from student logs and wearab
    Academics: GPA and Study Hours Per Day.
 
 ## Tech Stack
-Language: Python
-Libraries: * pandas & numpy (Data Manipulation)
-scikit-learn (Preprocessing & Traditional ML Models)
-xgboost (Gradient Boosting)
-matplotlib (Visualization)
-joblib (Model & Feature Persistence)
+ . Language: Python
+ . Libraries: * pandas & numpy (Data Manipulation)
+              scikit-learn (Preprocessing & Traditional ML Models)
+              xgboost (Gradient Boosting)
+              matplotlib (Visualization)
+              joblib (Model & Feature Persistence)
 
 ## Getting Started
 1. Clone the Repository
@@ -36,15 +36,15 @@ joblib (Model & Feature Persistence)
                                  Neural Networks (MLP).
 
 ## Evaluated Models
-   The project compares the performance of several architectures to find the best fit:
-   Linear Regressors: Linear, Ridge, Lasso.
-   Ensemble Methods: Random Forest, Extra Trees, Gradient Boosting, XGBoost.
-   Non-Linear: KNN, SVR, and Artificial Neural Networks (MLP).
+   . The project compares the performance of several architectures to find the best fit:
+   . Linear Regressors: Linear, Ridge, Lasso.
+   . Ensemble Methods: Random Forest, Extra Trees, Gradient Boosting, XGBoost.
+   . Non-Linear: KNN, SVR, and Artificial Neural Networks (MLP).
 
 ## File Structure
-train_model.ipynb: Core logic for training and evaluation.
-categorical_cols.pkl / numeric_cols.pkl: Saved metadata for consistent inference.
-student_productivity_predication_dataset.xlsx: Input data source.
+ train_model.ipynb: Core logic for training and evaluation.
+ categorical_cols.pkl / numeric_cols.pkl: Saved metadata for consistent inference.
+ student_productivity_predication_dataset.xlsx: Input data source.
 
 ## Model Performance & ResultsI evaluated 
 I evaluated 11 different regression models. While several ensemble methods showed perfect training scores, the Multiple Linear Regression model achieved the best balance and the highest accuracy on unseen data (Test Set).Top Performers Comparison Model Test R² Test, RMSE Status 
@@ -65,6 +65,6 @@ I evaluated 11 different regression models. While several ensemble methods showe
 
 ## Key Insights
 
-The Winner: Multiple Linear Regression outperformed complex ensembles on the test set. This suggests the relationship between student habits (sleep, GPA, physiology) and productivity is relatively linear and the model isn't distracted by noise.
-Overfitting Warning: Models like Decision Tree, Extra Trees, and XGBoost achieved a perfect $R^2$ of 1.0000 on training data but dropped significantly on test data. This indicates they "memorized" the training set rather than learning general patterns.
-Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.3543$), likely due to the dataset size or requiring more hyperparameter tuning.
+  The Winner: Multiple Linear Regression outperformed complex ensembles on the test set. This suggests the relationship between student habits (sleep, GPA, physiology) and productivity is relatively linear and the model isn't distracted by noise.
+  Overfitting Warning: Models like Decision Tree, Extra Trees, and XGBoost achieved a perfect $R^2$ of 1.0000 on training data but dropped significantly on test data. This indicates they "memorized" the training set rather than learning general patterns.
+  Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.3543$), likely due to the dataset size or requiring more hyperparameter tuning.
