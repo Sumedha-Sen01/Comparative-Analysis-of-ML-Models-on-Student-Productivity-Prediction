@@ -51,12 +51,17 @@ I evaluated 11 different regression models. While several ensemble methods showe
 
 | Model | Train $R^2$ | Test $R^2$ | Test RMSE | Status |
 | :--- | :---: | :---: | :---: | :--- |
-| **Linear Regression** | **0.8105** | **0.7804** | **0.4850** | **Best Fit** |
-| Gradient Boosting | 0.9092 | 0.7709 | 0.4954 | Good |
-| Random Forest | 0.9666 | 0.7466 | 0.5211 | Overfitting |
-| XGBoost | 1.0000 | 0.7072 | 0.5601 | Overfit |
-| ANN | 0.8296 | 0.3543 | 0.8317 | Poor |
-
+| **Multiple Linear Regression** | **0.8105** | **0.7804** | **0.4850** | **Best Fit** |
+| Gradient Boosting | 0.9468 | 0.7611 | 0.5059 | Strong |
+| Extra Trees | 1.0000 | 0.7608 | 0.5062 | Overfit |
+| Random Forest | 0.9673 | 0.7442 | 0.5235 | Overfit |
+| XGBoost | 0.9950 | 0.7314 | 0.5365 | Overfit |
+| Lasso | 0.7573 | 0.7271 | 0.5408 | Underfit |
+| Polynomial Ridge | 0.8483 | 0.7138 | 0.5537 | Decent |
+| SVR | 0.9920 | 0.6757 | 0.5894 | High Var |
+| KNN | 0.7577 | 0.5471 | 0.6966 | Poor |
+| ANN | 0.8422 | 0.4758 | 0.7494 | Poor |
+| Decision Tree | 1.0000 | 0.4330 | 0.7794 | High Overfit |
 
 ## Key Insights
 
