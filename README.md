@@ -51,7 +51,7 @@ I evaluated 11 different regression models. While several ensemble methods showe
 
 | Model | Train $R^2$ | Test $R^2$ | Test RMSE | Status |
 | :--- | :---: | :---: | :---: | :--- |
-| **Linear Regression** | **0.8105** | **0.7804** | **0.4850** | **🏆 Best Fit** |
+| **Linear Regression** | **0.8105** | **0.7804** | **0.4850** | **Best Fit** |
 | Gradient Boosting | 0.9092 | 0.7709 | 0.4954 | Good |
 | Random Forest | 0.9666 | 0.7466 | 0.5211 | Overfitting |
 | XGBoost | 1.0000 | 0.7072 | 0.5601 | Overfit |
