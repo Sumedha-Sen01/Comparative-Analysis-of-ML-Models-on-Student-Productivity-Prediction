@@ -1,4 +1,5 @@
-#Student Productivity Prediction
+# Student Productivity Prediction
+
 A machine learning project designed to predict Student Productivity Scores by analyzing physiological data, sleep patterns, and academic performance metrics.
 
 ## Project Overview
@@ -54,6 +55,8 @@ Random Forest           0.9666          0.7466         0.5211        Overfitting
 XGBoost                 1.0000          0.7072         0.5601          Overfit
 ANN                     0.8296          0.3543         0.8317           Poor
 
-##Key Insights
+## Key Insights
 
-The Winner: Multiple Linear Regression outperformed complex ensembles on the test set. This suggests the relationship between student habits (sleep, GPA, physiology) and productivity is relatively linear and the model isn't distracted by noise.Overfitting Warning: Models like Decision Tree, Extra Trees, and XGBoost achieved a perfect $R^2$ of 1.0000 on training data but dropped significantly on test data. This indicates they "memorized" the training set rather than learning general patterns.Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.3543$), likely due to the dataset size or requiring more hyperparameter tuning.
+The Winner: Multiple Linear Regression outperformed complex ensembles on the test set. This suggests the relationship between student habits (sleep, GPA, physiology) and productivity is relatively linear and the model isn't distracted by noise.
+Overfitting Warning: Models like Decision Tree, Extra Trees, and XGBoost achieved a perfect $R^2$ of 1.0000 on training data but dropped significantly on test data. This indicates they "memorized" the training set rather than learning general patterns.
+Deep Learning: The Artificial Neural Network (ANN) struggled with this specific dataset ($Test R^2: 0.3543$), likely due to the dataset size or requiring more hyperparameter tuning.
